@@ -86,9 +86,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/result"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:onClick="imperialScreen"
         android:text="Change to Imperial"
-        android:textSize="10sp"
-        android:onClick="imperialScreen"/>
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp" />
 
 
 </RelativeLayout>

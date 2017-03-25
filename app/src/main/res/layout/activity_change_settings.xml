@@ -57,23 +57,36 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Submit"
-        android:layout_above="@+id/result"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/spinnerSelect2"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp"
         android:background="?android:attr/colorActivatedHighlight"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:text="result"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_below="@+id/submitButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp" />
+
+    <Button
+        android:id="@+id/metricButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/result"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:onClick="metricScreen"
+        android:text="Change to IMetric"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp" />
 
 
 </RelativeLayout>

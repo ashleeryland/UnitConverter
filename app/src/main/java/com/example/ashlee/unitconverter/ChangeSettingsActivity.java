@@ -1,5 +1,6 @@
 package com.example.ashlee.unitconverter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -96,9 +97,8 @@ public class ChangeSettingsActivity extends AppCompatActivity {
         });
     }
 
-//    public void imperialScreen(View view) {
-//        System.out.println("It wa pressed");
-//        Intent intent = new Intent(this, MainActivity.class);
-//        startActivity(intent);
-//    }
+    public void metricScreen(View view) {
+        Intent startMainActivity = new Intent(this, MainActivity.class);
+        startActivity(startMainActivity);
+    }
 }
