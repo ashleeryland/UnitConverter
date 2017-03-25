@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Unit Converter</string>
+    <string name="selectUnit">Select unit to measure</string>
+    <string name="displayText">Enter Value</string>
+    <string-array name="unitNames1">
+        <item>Kilometer (km)</item>
+        <item>Centimeter (cm)</item>
+        <item>Millimeter (mm)</item>
+    </string-array>
+
+    <string-array name="unitNames2">
+        <item>Miles</item>
+        <item>Inches</item>
+        <item>Feet</item>
+    </string-array>
+</resources>
