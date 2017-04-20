@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".changedSettings" />
-        <activity android:name=".ChangeSettingsActivity"></activity>
+        <activity android:name=".ChangeSettingsActivity" />
+        <activity android:name=".Imperial"></activity>
     </application>
 
 </manifest>

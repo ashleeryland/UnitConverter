@@ -7,86 +7,41 @@
     android:orientation="horizontal"
     tools:context="com.example.ashlee.unitconverter.MainActivity">
 
-    <EditText
-        android:id="@+id/valueToConvert"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:inputType="number"
-        android:textSize="30sp" />
-
-    <Spinner
-        android:id="@+id/spinnerSelect1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/valueToConvert"
-        android:entries="@array/unitNames2"
-        android:prompt="@string/selectUnit"></Spinner>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/valueToConvert"
-        android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:gravity="center_horizontal"
-        android:text="into"
-        android:textSize="36sp"
-        android:textStyle="bold" />
-
-    <Spinner
-        android:id="@+id/spinnerSelect2"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:entries="@array/unitNames1"
-        android:gravity="center"
-        android:prompt="@string/selectUnit"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp">
-
-    </Spinner>
-
-    <Button
-        android:id="@+id/submitButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/spinnerSelect2"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="result"
-        android:textColor="@android:color/background_light"
+        android:text="SETTINGS"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/submitButton"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="9dp" />
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/metricButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/imperialButton"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/result"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:onClick="metricScreen"
-        android:text="Change to IMetric"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:onClick="imperialScreen"
+        android:text="Change to Imperial"
         android:textColor="@android:color/background_light"
         android:textSize="10sp" />
 
+    <Button
+        android:id="@+id/metricButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:onClick="metricScreen"
+        android:text="Change to Metric"
+        android:textColor="@android:color/background_light"
+        android:textSize="10sp"
+        android:layout_below="@+id/result"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

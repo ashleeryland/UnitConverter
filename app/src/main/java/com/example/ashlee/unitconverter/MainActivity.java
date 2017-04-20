@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** Called when the user taps the settings button */
     public void imperialScreen(View view) {
-        System.out.println("It wa pressed");
+        System.out.println("It was pressed");
         Intent startNewActivity = new Intent(this, ChangeSettingsActivity.class);
         startActivity(startNewActivity);
     }
