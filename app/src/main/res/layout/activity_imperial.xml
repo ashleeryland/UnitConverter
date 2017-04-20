@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/result"
-        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:backgroundTint="?attr/colorPrimaryDark"
         android:onClick="settingsScreen"
         android:text="@string/settingsText"
         android:textColor="@android:color/background_light"
