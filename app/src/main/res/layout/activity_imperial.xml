@@ -24,7 +24,8 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/valueToConvert"
         android:entries="@array/unitNames2"
-        android:prompt="@string/selectUnit"></Spinner>
+        android:prompt="@string/selectUnit">
+    </Spinner>
 
     <TextView
         android:id="@+id/textView"
@@ -35,7 +36,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center_horizontal"
-        android:text="into"
+        android:text="@string/midText"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -43,12 +44,12 @@
         android:id="@+id/spinnerSelect2"
         android:layout_width="match_parent"
         android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
         android:entries="@array/unitNames1"
         android:gravity="center"
-        android:prompt="@string/selectUnit"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="20dp">
+        android:prompt="@string/selectUnit">
 
     </Spinner>
 
@@ -56,37 +57,37 @@
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/spinnerSelect2"
-        android:layout_alignParentStart="true" />
+        android:layout_marginTop="20dp"
+        android:text="@string/submitText" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="?android:attr/colorActivatedHighlight"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/submitButton"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="result"
+        android:text="@string/resultText"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:layout_below="@+id/submitButton"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="9dp" />
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/metricButton"
+        android:id="@+id/settingsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/result"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:onClick="metricScreen"
-        android:text="Change to Metric"
+        android:backgroundTint="?android:attr/colorActivatedHighlight"
+        android:onClick="settingsScreen"
+        android:text="@string/settingsText"
         android:textColor="@android:color/background_light"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
 
 </RelativeLayout>

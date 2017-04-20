@@ -8,14 +8,14 @@
     tools:context="com.example.ashlee.unitconverter.MainActivity">
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/settings"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="SETTINGS"
+        android:text="@string/settingsText"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -25,23 +25,23 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/result"
+        android:layout_below="@+id/settings"
         android:backgroundTint="?android:attr/colorActivatedHighlight"
         android:onClick="imperialScreen"
-        android:text="Change to Imperial"
+        android:text="@string/changeImpText"
         android:textColor="@android:color/background_light"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/metricButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/settings"
         android:backgroundTint="?android:attr/colorActivatedHighlight"
         android:onClick="metricScreen"
-        android:text="Change to Metric"
+        android:text="@string/changeMetText"
         android:textColor="@android:color/background_light"
-        android:textSize="10sp"
-        android:layout_below="@+id/result"
-        android:layout_alignParentStart="true" />
+        android:textSize="12sp" />
 
 </RelativeLayout>

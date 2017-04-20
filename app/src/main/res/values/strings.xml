@@ -2,14 +2,22 @@
     <string name="app_name">Unit Converter</string>
     <string name="selectUnit">Select unit to measure</string>
     <string name="displayText">Enter Value</string>
+    <string name="midText">into</string>
+    <string name="submitText">Submit</string>
+    <string name="resultText">result</string>
+    <string name="settingsText">SETTINGS</string>
+    <string name="changeImpText">Change to Imperial</string>
+    <string name="changeMetText">Change to Metric</string>
     <string-array name="unitNames1">
-        <item>Kilometer (km)</item>
-        <item>Centimeter (cm)</item>
-        <item>Millimeter (mm)</item>
+        <item>Kilometre (km)</item>
+        <item>Metre (m)</item>
+        <item>Centimetre (cm)</item>
+        <item>Millimetre (mm)</item>
     </string-array>
 
     <string-array name="unitNames2">
         <item>Miles</item>
+        <item>Yards</item>
         <item>Inches</item>
         <item>Feet</item>
     </string-array>
